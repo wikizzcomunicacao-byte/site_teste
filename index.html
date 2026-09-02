@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulinho Estética Automotiva | SJRP - Vitrificação e Polimento</title>
+    <title>Sansanich Car Detailing - We Detail You Shine</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -11,10 +12,10 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#090a0f',
+                        darkBg: '#08090e',
                         cardBg: '#12141c',
-                        brandRed: '#dc2626',
-                        brandRedDark: '#991b1b',
+                        brandYellow: '#eab308',
+                        brandYellowDark: '#ca8a04',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -23,149 +24,197 @@
             }
         }
     </script>
+    <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-brandRed selection:text-white overflow-x-hidden">
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-brandYellow selection:text-black overflow-x-hidden">
 
-    <div class="max-w-3xl mx-auto px-4 py-8 md:py-12 flex flex-col gap-10">
+    <div class="max-w-4xl mx-auto px-4 py-8 md:py-12 flex flex-col gap-8">
 
+        <!-- Header / Logo & Main Slogan -->
         <header class="text-center flex flex-col items-center">
-            <div class="mb-4 flex flex-col items-center">
-                <span class="text-xs uppercase tracking-[0.3em] font-light text-slate-400 mb-1">ESTÉTICA AUTOMOTIVA</span>
-                <h1 class="text-3xl sm:text-5xl font-black tracking-wider text-white uppercase drop-shadow-md">
-                    PAULINHO <span class="text-brandRed">ESTÉTICA</span>
-                </h1>
-                <div class="w-24 h-0.5 bg-brandRed mt-2"></div>
+            <!-- Top Badges / Subtext -->
+            <div class="w-full flex justify-between items-center px-2 mb-4 text-[10px] sm:text-xs uppercase tracking-[0.2em] text-slate-400 font-semibold">
+                <span class="border-b border-brandYellow/40 pb-1 text-brandYellow">PREMIUM DETAILING FOR YOUR PRIDE & JOY</span>
+                <span class="border-b border-brandYellow/40 pb-1 text-brandYellow">WE DETAIL YOU SHINE</span>
             </div>
 
-            <h2 class="text-2xl sm:text-4xl font-black tracking-tight text-white uppercase mt-2">
-                VITRIFICAÇÃO <span class="text-brandRed">|</span> POLIMENTO <br>
-                <span class="text-slate-300 text-xl sm:text-3xl">PROTEÇÃO AUTOMOTIVA</span>
+            <!-- Brand Name -->
+            <h1 class="text-4xl sm:text-6xl font-black tracking-wider text-white uppercase drop-shadow-md">
+                SANSANICH
+            </h1>
+            <h2 class="text-2xl sm:text-4xl font-black tracking-widest text-brandYellow uppercase mt-1">
+                - CAR DETAILING -
             </h2>
 
-            <p class="text-xs sm:text-sm uppercase tracking-[0.25em] text-slate-400 mt-3 font-semibold">
-                SÃO JOSÉ DO RIO PRETO <span class="text-brandRed mx-1.5">|</span> SJRP
-            </p>
+            <!-- Catchphrase Box -->
+            <div class="mt-6 flex flex-col items-center">
+                <span class="text-xs uppercase tracking-[0.3em] font-bold text-slate-400">MORE THAN A WASH</span>
+                <h3 class="text-2xl sm:text-4xl font-black tracking-tight text-white uppercase mt-1 leading-tight">
+                    IT’S A DETAIL <br>
+                    <span class="text-brandYellow">THAT SHOWS WE CARE!</span>
+                </h3>
+            </div>
         </header>
 
+        <!-- Hero Car Image Showcase -->
         <section class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-gradient-to-b from-slate-900 to-black">
             <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-80 z-10"></div>
-            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop" alt="Paulinho Estética Automotiva SJRP - BMW Detailing" class="w-full h-[280px] sm:h-[400px] object-cover object-center transform hover:scale-105 transition-transform duration-700">
-            
-            <div class="absolute inset-0 bg-brandRed/5 mix-blend-overlay pointer-events-none"></div>
+            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop" alt="Sansanich Car Detailing" class="w-full h-[260px] sm:h-[380px] object-cover object-center transform hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-brandYellow/5 mix-blend-overlay pointer-events-none"></div>
         </section>
 
+        <!-- OUR SERVICES SECTION -->
         <section class="flex flex-col items-center">
             <div class="flex items-center gap-4 w-full mb-6">
                 <div class="flex-1 h-px bg-slate-800"></div>
-                <h3 class="text-xl sm:text-2xl font-black tracking-widest text-brandRed uppercase">NOSSOS SERVIÇOS</h3>
+                <div class="px-6 py-1.5 rounded-full bg-brandYellow text-black font-black text-xs sm:text-sm tracking-widest uppercase shadow-lg shadow-brandYellow/20">
+                    OUR SERVICES
+                </div>
                 <div class="flex-1 h-px bg-slate-800"></div>
             </div>
 
+            <!-- Services Grid (8 Services) -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full">
-                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandRed/50 transition-colors">
-                    <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
-                        <i data-lucide="shield-check" class="w-5 h-5"></i>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wide text-slate-200">VITRIFICAÇÃO DE PINTURA</span>
-                </div>
-
-                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandRed/50 transition-colors">
-                    <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
-                        <i data-lucide="sparkles" class="w-5 h-5"></i>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wide text-slate-200">CORREÇÃO E POLIMENTO</span>
-                </div>
-
-                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandRed/50 transition-colors">
-                    <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
+                <!-- Service 1 -->
+                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandYellow/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-brandYellow/10 text-brandYellow flex items-center justify-center mb-3">
                         <i data-lucide="car" class="w-5 h-5"></i>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-wide text-slate-200">HIGIENIZAÇÃO INTERNA</span>
+                    <span class="text-[11px] font-bold uppercase tracking-wide text-slate-200">EXTERIOR WASH & DETAILING</span>
                 </div>
 
-                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandRed/50 transition-colors">
-                    <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
-                        <i data-lucide="droplet" class="w-5 h-5"></i>
+                <!-- Service 2 -->
+                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandYellow/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-brandYellow/10 text-brandYellow flex items-center justify-center mb-3">
+                        <i data-lucide="spray-can" class="w-5 h-5"></i>
                     </div>
-                    <span class="text-xs font-bold uppercase tracking-wide text-slate-200">LAVAGEM E ACABAMENTO</span>
+                    <span class="text-[11px] font-bold uppercase tracking-wide text-slate-200">INTERIOR CLEANING & VACUUMING</span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandYellow/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-brandYellow/10 text-brandYellow flex items-center justify-center mb-3">
+                        <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wide text-slate-200">WAXING & POLISHING</span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandYellow/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-brandYellow/10 text-brandYellow flex items-center justify-center mb-3">
+                        <i data-lucide="shield" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wide text-slate-200">CERAMIC COATING</span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandYellow/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-brandYellow/10 text-brandYellow flex items-center justify-center mb-3">
+                        <i data-lucide="shield-check" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wide text-slate-200">PAINT PROTECTION</span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandYellow/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-brandYellow/10 text-brandYellow flex items-center justify-center mb-3">
+                        <i data-lucide="disc" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wide text-slate-200">TIRE & WHEEL CARE</span>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandYellow/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-brandYellow/10 text-brandYellow flex items-center justify-center mb-3">
+                        <i data-lucide="wand-2" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wide text-slate-200">SCRATCH REMOVAL</span>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandYellow/50 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-brandYellow/10 text-brandYellow flex items-center justify-center mb-3">
+                        <i data-lucide="cpu" class="w-5 h-5"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wide text-slate-200">ENGINE BAY CLEANING</span>
                 </div>
             </div>
         </section>
 
-        <section class="flex flex-col items-center">
-            <div class="flex items-center gap-4 w-full mb-6">
-                <div class="flex-1 h-px bg-slate-800"></div>
-                <h3 class="text-xl sm:text-2xl font-black tracking-widest text-brandRed uppercase">POR QUE ESCOLHER?</h3>
-                <div class="flex-1 h-px bg-slate-800"></div>
+        <!-- MIDDLE BANNER: REGULAR DETAILING + CHECKLIST -->
+        <section class="bg-cardBg border border-slate-800 rounded-2xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center shadow-xl">
+            <!-- Left: Regular Detailing Slogan -->
+            <div class="flex items-center gap-4 border-b md:border-b-0 md:border-r border-slate-800 pb-6 md:pb-0 md:pr-6">
+                <div class="w-12 h-12 rounded-xl bg-brandYellow/10 text-brandYellow flex-shrink-0 flex items-center justify-center">
+                    <i data-lucide="calendar-check" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-black uppercase text-brandYellow tracking-wider">REGULAR DETAILING</h4>
+                    <p class="text-lg sm:text-xl font-extrabold text-white uppercase leading-tight mt-1">KEEPS YOUR CAR LOOKING NEW EVERY DAY!</p>
+                </div>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full">
-                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center">
-                    <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
-                        <i data-lucide="gem" class="w-5 h-5"></i>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wide text-slate-200">PRODUTOS PREMIUM</span>
+            <!-- Right: Checklist Points -->
+            <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brandYellow flex-shrink-0"></i>
+                    <span class="text-xs sm:text-sm font-bold uppercase text-slate-200">PROFESSIONAL TEAM</span>
                 </div>
-
-                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center">
-                    <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
-                        <i data-lucide="award" class="w-5 h-5"></i>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wide text-slate-200">ESPECIALIZADO</span>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brandYellow flex-shrink-0"></i>
+                    <span class="text-xs sm:text-sm font-bold uppercase text-slate-200">PREMIUM QUALITY PRODUCTS</span>
                 </div>
-
-                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center">
-                    <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
-                        <i data-lucide="clock" class="w-5 h-5"></i>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wide text-slate-200">ATENÇÃO AOS DETALHES</span>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brandYellow flex-shrink-0"></i>
+                    <span class="text-xs sm:text-sm font-bold uppercase text-slate-200">ATTENTION TO EVERY DETAIL</span>
                 </div>
-
-                <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center">
-                    <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
-                        <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wide text-slate-200">RESULTADO IMPECÁVEL</span>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check" class="w-5 h-5 text-brandYellow flex-shrink-0"></i>
+                    <span class="text-xs sm:text-sm font-bold uppercase text-slate-200">CUSTOMER SATISFACTION</span>
                 </div>
             </div>
         </section>
 
-        <footer class="bg-cardBg border border-slate-800 rounded-2xl p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 shadow-xl">
-            <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-full bg-brandRed text-white flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandRed/30">
-                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+        <!-- TAGLINE BAR -->
+        <div class="py-3 px-6 bg-gradient-to-r from-slate-900 via-cardBg to-slate-900 border-y border-slate-800 flex flex-wrap justify-center sm:justify-between items-center text-xs font-black uppercase tracking-widest text-brandYellow gap-4">
+            <span>CLEAN CAR.</span>
+            <span class="text-slate-600 hidden sm:inline">|</span>
+            <span>FRESH FEEL.</span>
+            <span class="text-slate-600 hidden sm:inline">|</span>
+            <span>BETTER DRIVE.</span>
+        </div>
+
+        <!-- FOOTER / CONTACT INFO -->
+        <footer class="bg-cardBg border border-slate-800 rounded-2xl p-6 grid grid-cols-1 sm:grid-cols-2 gap-6 shadow-xl">
+            <!-- Call or Text -->
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-brandYellow text-black flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandYellow/30">
+                    <i data-lucide="phone-call" class="w-6 h-6"></i>
                 </div>
                 <div>
-                    <span class="text-[10px] uppercase font-bold tracking-wider text-brandRed block mb-1">ENDEREÇO</span>
-                    <p class="text-xs text-slate-300 leading-relaxed font-medium">R. Nuno Álvares Pereira, 1516 - Parque Estoril, São José do Rio Preto - SP, 15085-000</p>
+                    <span class="text-[10px] uppercase font-bold tracking-wider text-brandYellow block mb-0.5">CALL OR TEXT</span>
+                    <a href="tel:9418008198" class="text-lg sm:text-xl font-black text-white hover:text-brandYellow transition-colors block">941-800-8198</a>
                 </div>
             </div>
 
-            <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-full bg-brandRed text-white flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandRed/30">
-                    <i data-lucide="phone" class="w-5 h-5"></i>
+            <!-- Visit Us -->
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-brandYellow text-black flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandYellow/30">
+                    <i data-lucide="map-pin" class="w-6 h-6"></i>
                 </div>
                 <div>
-                    <span class="text-[10px] uppercase font-bold tracking-wider text-brandRed block mb-1">CONTATO / WHATSAPP</span>
-                    <a href="tel:+5517991835321" class="text-xs text-slate-300 hover:text-white font-medium block">(17) 99183-5321</a>
-                </div>
-            </div>
-
-            <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-full bg-brandRed text-white flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandRed/30">
-                    <i data-lucide="instagram" class="w-5 h-5"></i>
-                </div>
-                <div>
-                    <span class="text-[10px] uppercase font-bold tracking-wider text-brandRed block mb-1">INSTAGRAM</span>
-                    <a href="https://instagram.com/paulinhoesteticaautomotiva_" target="_blank" class="text-xs text-slate-300 hover:text-white font-medium block">@paulinhoesteticaautomotiva_</a>
+                    <span class="text-[10px] uppercase font-bold tracking-wider text-brandYellow block mb-0.5">VISIT US</span>
+                    <p class="text-xs sm:text-sm text-slate-200 font-bold leading-snug">4457 Langsom Ln,<br>North Port, FL 34286</p>
                 </div>
             </div>
         </footer>
 
     </div>
 
+    <!-- Initialize Lucide Icons -->
     <script>
         lucide.createIcons();
     </script>
