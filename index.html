@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sansanich Car Detailing - We Detail You Shine</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -15,7 +14,6 @@
                         darkBg: '#05060a',
                         cardSurface: '#0e1118',
                         brandYellow: '#facc15',
-                        brandYellowGlow: 'rgba(250, 204, 21, 0.15)',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -24,27 +22,22 @@
             }
         }
     </script>
-    <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-brandYellow selection:text-black overflow-x-hidden relative">
 
-    <!-- Atmospheric Studio Lighting (Eliminates flat IA look) -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brandYellow/5 rounded-full blur-[140px] pointer-events-none"></div>
-    <div class="absolute top-[40%] -left-[10%] w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[160px] pointer-events-none"></div>
+    <div id="glow-1" class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brandYellow/5 rounded-full blur-[140px] pointer-events-none transition-transform duration-150 ease-out"></div>
+    <div id="glow-2" class="absolute top-[45%] -left-[10%] w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[160px] pointer-events-none transition-transform duration-150 ease-out"></div>
 
     <div class="relative max-w-4xl mx-auto px-4 py-12 md:py-20 flex flex-col gap-14">
 
-        <!-- Header / Editorial Branding -->
         <header class="text-center flex flex-col items-center">
             <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-white/[0.03] border border-white/10 text-[11px] uppercase tracking-[0.25em] text-brandYellow font-medium mb-6 backdrop-blur-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-brandYellow animate-pulse"></span>
                 PREMIUM DETAILING FOR YOUR PRIDE & JOY
             </div>
 
-            <!-- Brand Name with Split Weight -->
             <h1 class="text-5xl sm:text-7xl font-black tracking-tighter text-white uppercase flex items-center gap-3">
                 SANSANICH
             </h1>
@@ -52,7 +45,6 @@
                 — CAR DETAILING —
             </p>
 
-            <!-- Hook Message -->
             <div class="mt-8 max-w-xl">
                 <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-400 block mb-2">MORE THAN A WASH</span>
                 <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white uppercase leading-snug">
@@ -61,19 +53,16 @@
             </div>
         </header>
 
-        <!-- Hero Showcase with Studio Glass Effect -->
-        <section class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-cardSurface group">
+        <section id="parallax-container" class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-cardSurface group">
             <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-90 z-10"></div>
-            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop" alt="Sansanich Car Detailing Showcase" class="w-full h-[300px] sm:h-[420px] object-cover object-center transform group-hover:scale-105 transition-transform duration-1000 ease-out">
+            <img id="parallax-image" src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop" alt="Sansanich Car Detailing Showcase" class="w-full h-[320px] sm:h-[450px] object-cover object-center transform scale-105 transition-transform duration-100 ease-out">
             
-            <!-- Floating badge on image -->
             <div class="absolute bottom-6 left-6 z-20 hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl bg-black/60 backdrop-blur-md border border-white/10 text-xs font-semibold text-slate-200">
                 <i data-lucide="sparkles" class="w-4 h-4 text-brandYellow"></i>
                 <span>Excellence in Every Square Inch</span>
             </div>
         </section>
 
-        <!-- OUR SERVICES SECTION -->
         <section class="flex flex-col items-center">
             <div class="flex items-center gap-4 w-full mb-8">
                 <div class="flex-1 h-px bg-gradient-to-r from-transparent to-white/10"></div>
@@ -83,9 +72,7 @@
                 <div class="flex-1 h-px bg-gradient-to-l from-transparent to-white/10"></div>
             </div>
 
-            <!-- Asymmetrical-feel Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5 w-full">
-                <!-- Service 1 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandYellow/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandYellow/[0.08] text-brandYellow flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandYellow/[0.15] transition-all">
                         <i data-lucide="car" class="w-5 h-5"></i>
@@ -93,7 +80,6 @@
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200 leading-snug">EXTERIOR WASH & DETAILING</span>
                 </div>
 
-                <!-- Service 2 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandYellow/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandYellow/[0.08] text-brandYellow flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandYellow/[0.15] transition-all">
                         <i data-lucide="spray-can" class="w-5 h-5"></i>
@@ -101,7 +87,6 @@
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200 leading-snug">INTERIOR CLEANING & VACUUMING</span>
                 </div>
 
-                <!-- Service 3 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandYellow/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandYellow/[0.08] text-brandYellow flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandYellow/[0.15] transition-all">
                         <i data-lucide="sparkles" class="w-5 h-5"></i>
@@ -109,7 +94,6 @@
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200 leading-snug">WAXING & POLISHING</span>
                 </div>
 
-                <!-- Service 4 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandYellow/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandYellow/[0.08] text-brandYellow flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandYellow/[0.15] transition-all">
                         <i data-lucide="shield" class="w-5 h-5"></i>
@@ -117,7 +101,6 @@
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200 leading-snug">CERAMIC COATING</span>
                 </div>
 
-                <!-- Service 5 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandYellow/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandYellow/[0.08] text-brandYellow flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandYellow/[0.15] transition-all">
                         <i data-lucide="shield-check" class="w-5 h-5"></i>
@@ -125,7 +108,6 @@
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200 leading-snug">PAINT PROTECTION</span>
                 </div>
 
-                <!-- Service 6 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandYellow/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandYellow/[0.08] text-brandYellow flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandYellow/[0.15] transition-all">
                         <i data-lucide="disc" class="w-5 h-5"></i>
@@ -133,7 +115,6 @@
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200 leading-snug">TIRE & WHEEL CARE</span>
                 </div>
 
-                <!-- Service 7 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandYellow/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandYellow/[0.08] text-brandYellow flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandYellow/[0.15] transition-all">
                         <i data-lucide="wand-2" class="w-5 h-5"></i>
@@ -141,7 +122,6 @@
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200 leading-snug">SCRATCH REMOVAL</span>
                 </div>
 
-                <!-- Service 8 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandYellow/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandYellow/[0.08] text-brandYellow flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandYellow/[0.15] transition-all">
                         <i data-lucide="cpu" class="w-5 h-5"></i>
@@ -151,11 +131,9 @@
             </div>
         </section>
 
-        <!-- VALUE PROPOSITION & CHECKLIST SECTION -->
         <section class="bg-cardSurface border border-white/10 rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative overflow-hidden shadow-xl">
             <div class="absolute -right-20 -bottom-20 w-60 h-60 bg-brandYellow/5 rounded-full blur-[80px] pointer-events-none"></div>
 
-            <!-- Left: Regular Detailing statement -->
             <div class="flex items-start gap-4 border-b md:border-b-0 md:border-r border-white/10 pb-6 md:pb-0 md:pr-8">
                 <div class="w-12 h-12 rounded-2xl bg-brandYellow/10 text-brandYellow flex-shrink-0 flex items-center justify-center">
                     <i data-lucide="calendar-check" class="w-6 h-6"></i>
@@ -166,7 +144,6 @@
                 </div>
             </div>
 
-            <!-- Right: Feature Checklist -->
             <div class="flex flex-col gap-3.5">
                 <div class="flex items-center gap-3">
                     <div class="w-6 h-6 rounded-full bg-brandYellow/10 text-brandYellow flex items-center justify-center flex-shrink-0">
@@ -195,7 +172,6 @@
             </div>
         </section>
 
-        <!-- MINIMALIST BRAND PILLARS -->
         <div class="py-4 px-8 rounded-2xl bg-white/[0.02] border border-white/[0.06] flex flex-wrap justify-center sm:justify-between items-center text-xs font-black uppercase tracking-[0.3em] text-brandYellow gap-4 backdrop-blur-sm">
             <span>CLEAN CAR.</span>
             <span class="text-white/20 hidden sm:inline">•</span>
@@ -204,9 +180,7 @@
             <span>BETTER DRIVE.</span>
         </div>
 
-        <!-- FOOTER / CONTACT CARDS -->
         <footer class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <!-- Call or Text Card -->
             <a href="tel:9418008198" class="bg-cardSurface hover:bg-cardSurface/90 border border-white/10 hover:border-brandYellow/50 rounded-3xl p-6 flex items-center gap-5 transition-all group shadow-lg">
                 <div class="w-14 h-14 rounded-2xl bg-brandYellow text-black flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandYellow/20 group-hover:scale-105 transition-transform">
                     <i data-lucide="phone-call" class="w-6 h-6"></i>
@@ -217,7 +191,6 @@
                 </div>
             </a>
 
-            <!-- Visit Us Card -->
             <div class="bg-cardSurface border border-white/10 rounded-3xl p-6 flex items-center gap-5 shadow-lg">
                 <div class="w-14 h-14 rounded-2xl bg-brandYellow text-black flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandYellow/20">
                     <i data-lucide="map-pin" class="w-6 h-6"></i>
@@ -231,9 +204,29 @@
 
     </div>
 
-    <!-- Initialize Lucide Icons -->
     <script>
         lucide.createIcons();
+
+        // Parallax scroll listener
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            
+            // Move hero image slightly slower than scroll to create depth
+            const heroImage = document.getElementById('parallax-image');
+            if (heroImage) {
+                heroImage.style.transform = `translateY(${scrollY * 0.12}px) scale(1.05)`;
+            }
+
+            // Move atmospheric glows subtly in opposite directions
+            const glow1 = document.getElementById('glow-1');
+            const glow2 = document.getElementById('glow-2');
+            if (glow1) {
+                glow1.style.transform = `translate(-50%, ${scrollY * 0.25}px)`;
+            }
+            if (glow2) {
+                glow2.style.transform = `translateY(${-scrollY * 0.15}px)`;
+            }
+        });
     </script>
 </body>
 </html>
