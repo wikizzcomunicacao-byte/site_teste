@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulinho Estética Automotiva | SJRP - Vitrificação e Polimento</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,22 +24,27 @@
             }
         }
     </script>
+    <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-brandRed selection:text-white overflow-x-hidden relative">
 
+    <!-- Atmospheric Parallax Studio Lighting -->
     <div id="glow-1" class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brandRed/5 rounded-full blur-[140px] pointer-events-none transition-transform duration-150 ease-out"></div>
     <div id="glow-2" class="absolute top-[45%] -left-[10%] w-[500px] h-[500px] bg-rose-600/5 rounded-full blur-[160px] pointer-events-none transition-transform duration-150 ease-out"></div>
 
     <div class="relative max-w-4xl mx-auto px-4 py-12 md:py-20 flex flex-col gap-14">
 
+        <!-- Header / Editorial Branding -->
         <header class="text-center flex flex-col items-center">
             <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-white/[0.03] border border-white/10 text-[11px] uppercase tracking-[0.25em] text-brandRed font-medium mb-6 backdrop-blur-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-brandRed animate-pulse"></span>
                 SÃO JOSÉ DO RIO PRETO • SJRP
             </div>
 
+            <!-- Brand Name -->
             <h1 class="text-4xl sm:text-6xl font-black tracking-tighter text-white uppercase flex items-center gap-3">
                 PAULINHO <span class="text-brandRed">ESTÉTICA</span>
             </h1>
@@ -46,6 +52,7 @@
                 — AUTOMOTIVA —
             </p>
 
+            <!-- Hook Message -->
             <div class="mt-8 max-w-xl">
                 <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-400 block mb-2">PROTEÇÃO & ACABAMENTO</span>
                 <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white uppercase leading-snug">
@@ -54,16 +61,20 @@
             </div>
         </header>
 
+        <!-- Hero Showcase with Parallax Effect -->
         <section id="parallax-container" class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-cardSurface group">
             <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-90 z-10"></div>
-            <img id="parallax-image" src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop" alt="Paulinho Estética Automotiva SJRP" class="w-full h-[320px] sm:h-[450px] object-cover object-center transform scale-105 transition-transform duration-100 ease-out">
+            <!-- Imagem isolada da BMW cinza de estúdio -->
+            <img id="parallax-image" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1200&auto=format&fit=crop" alt="Paulinho Estética Automotiva SJRP" class="w-full h-[320px] sm:h-[450px] object-cover object-center transform scale-105 transition-transform duration-100 ease-out">
             
+            <!-- Floating badge on image -->
             <div class="absolute bottom-6 left-6 z-20 hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl bg-black/60 backdrop-blur-md border border-white/10 text-xs font-semibold text-slate-200">
                 <i data-lucide="sparkles" class="w-4 h-4 text-brandRed"></i>
                 <span>Brilho Extremo e Proteção Duradoura</span>
             </div>
         </section>
 
+        <!-- OUR SERVICES SECTION -->
         <section class="flex flex-col items-center">
             <div class="flex items-center gap-4 w-full mb-8">
                 <div class="flex-1 h-px bg-gradient-to-r from-transparent to-white/10"></div>
@@ -73,7 +84,9 @@
                 <div class="flex-1 h-px bg-gradient-to-l from-transparent to-white/10"></div>
             </div>
 
+            <!-- Services Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5 w-full">
+                <!-- Service 1 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandRed/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandRed/[0.08] text-brandRed flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandRed/[0.15] transition-all">
                         <i data-lucide="shield-check" class="w-5 h-5"></i>
@@ -81,6 +94,7 @@
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200 leading-snug">VITRIFICAÇÃO DE PINTURA</span>
                 </div>
 
+                <!-- Service 2 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandRed/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandRed/[0.08] text-brandRed flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandRed/[0.15] transition-all">
                         <i data-lucide="sparkles" class="w-5 h-5"></i>
@@ -88,6 +102,7 @@
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200 leading-snug">CORREÇÃO E POLIMENTO</span>
                 </div>
 
+                <!-- Service 3 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandRed/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandRed/[0.08] text-brandRed flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandRed/[0.15] transition-all">
                         <i data-lucide="car" class="w-5 h-5"></i>
@@ -95,6 +110,7 @@
                     <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200 leading-snug">HIGIENIZAÇÃO INTERNA</span>
                 </div>
 
+                <!-- Service 4 -->
                 <div class="bg-cardSurface/80 hover:bg-cardSurface border border-white/[0.06] hover:border-brandRed/40 rounded-2xl p-5 flex flex-col items-center text-center transition-all duration-300 group">
                     <div class="w-11 h-11 rounded-xl bg-brandRed/[0.08] text-brandRed flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brandRed/[0.15] transition-all">
                         <i data-lucide="droplet" class="w-5 h-5"></i>
@@ -104,9 +120,11 @@
             </div>
         </section>
 
+        <!-- VALUE PROPOSITION & CHECKLIST SECTION -->
         <section class="bg-cardSurface border border-white/10 rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative overflow-hidden shadow-xl">
             <div class="absolute -right-20 -bottom-20 w-60 h-60 bg-brandRed/5 rounded-full blur-[80px] pointer-events-none"></div>
 
+            <!-- Left: Statement -->
             <div class="flex items-start gap-4 border-b md:border-b-0 md:border-r border-white/10 pb-6 md:pb-0 md:pr-8">
                 <div class="w-12 h-12 rounded-2xl bg-brandRed/10 text-brandRed flex-shrink-0 flex items-center justify-center">
                     <i data-lucide="award" class="w-6 h-6"></i>
@@ -117,6 +135,7 @@
                 </div>
             </div>
 
+            <!-- Right: Feature Checklist -->
             <div class="flex flex-col gap-3.5">
                 <div class="flex items-center gap-3">
                     <div class="w-6 h-6 rounded-full bg-brandRed/10 text-brandRed flex items-center justify-center flex-shrink-0">
@@ -145,6 +164,7 @@
             </div>
         </section>
 
+        <!-- MINIMALIST BRAND PILLARS -->
         <div class="py-4 px-8 rounded-2xl bg-white/[0.02] border border-white/[0.06] flex flex-wrap justify-center sm:justify-between items-center text-xs font-black uppercase tracking-[0.3em] text-brandRed gap-4 backdrop-blur-sm">
             <span>BRILHO.</span>
             <span class="text-white/20 hidden sm:inline">•</span>
@@ -153,7 +173,9 @@
             <span>PERFEIÇÃO.</span>
         </div>
 
+        <!-- FOOTER / CONTACT CARDS -->
         <footer class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- WhatsApp Card -->
             <a href="https://wa.me/5517991835321" target="_blank" class="bg-cardSurface hover:bg-cardSurface/90 border border-white/10 hover:border-brandRed/50 rounded-3xl p-6 flex items-center gap-5 transition-all group shadow-lg">
                 <div class="w-14 h-14 rounded-2xl bg-brandRed text-white flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandRed/30 group-hover:scale-105 transition-transform">
                     <i data-lucide="phone" class="w-6 h-6"></i>
@@ -164,6 +186,7 @@
                 </div>
             </a>
 
+            <!-- Visit Us Card (Linked to Google Maps) -->
             <a href="https://www.google.com/maps/search/?api=1&query=R.+Nuno+Alvares+Pereira,+1516+-+Parque+Estoril,+Sao+Jose+do+Rio+Preto+-+SP" target="_blank" class="bg-cardSurface hover:bg-cardSurface/90 border border-white/10 hover:border-brandRed/50 rounded-3xl p-6 flex items-center gap-5 transition-all group shadow-lg">
                 <div class="w-14 h-14 rounded-2xl bg-brandRed text-white flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandRed/30 group-hover:scale-105 transition-transform">
                     <i data-lucide="map-pin" class="w-6 h-6"></i>
@@ -177,6 +200,7 @@
 
     </div>
 
+    <!-- Initialize Lucide Icons & Parallax Scroll Effect -->
     <script>
         lucide.createIcons();
 
