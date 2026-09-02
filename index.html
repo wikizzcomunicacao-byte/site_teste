@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulinho Estética Automotiva | SJRP - Vitrificação e Polimento</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -24,18 +23,14 @@
             }
         }
     </script>
-    <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-brandRed selection:text-white overflow-x-hidden">
 
     <div class="max-w-3xl mx-auto px-4 py-8 md:py-12 flex flex-col gap-10">
 
-        <!-- Header / Logo & Slogan -->
         <header class="text-center flex flex-col items-center">
-            <!-- Badge -->
             <div class="mb-4 flex flex-col items-center">
                 <span class="text-xs uppercase tracking-[0.3em] font-light text-slate-400 mb-1">ESTÉTICA AUTOMOTIVA</span>
                 <h1 class="text-3xl sm:text-5xl font-black tracking-wider text-white uppercase drop-shadow-md">
@@ -44,29 +39,23 @@
                 <div class="w-24 h-0.5 bg-brandRed mt-2"></div>
             </div>
 
-            <!-- Main Heading -->
             <h2 class="text-2xl sm:text-4xl font-black tracking-tight text-white uppercase mt-2">
                 VITRIFICAÇÃO <span class="text-brandRed">|</span> POLIMENTO <br>
                 <span class="text-slate-300 text-xl sm:text-3xl">PROTEÇÃO AUTOMOTIVA</span>
             </h2>
 
-            <!-- Subtitle / Local -->
             <p class="text-xs sm:text-sm uppercase tracking-[0.25em] text-slate-400 mt-3 font-semibold">
                 SÃO JOSÉ DO RIO PRETO <span class="text-brandRed mx-1.5">|</span> SJRP
             </p>
         </header>
 
-        <!-- Hero Car Image Showcase -->
         <section class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-gradient-to-b from-slate-900 to-black">
             <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-80 z-10"></div>
-            <!-- Imagem real baseada no portfólio do Paulinho (Carro vitrificado com acabamento impecável) -->
-            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop" alt="Paulinho Estética Automotiva SJRP" class="w-full h-[280px] sm:h-[400px] object-cover object-center transform hover:scale-105 transition-transform duration-700">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1200&auto=format&fit=crop" alt="Paulinho Estética Automotiva SJRP - BMW Detailing" class="w-full h-[280px] sm:h-[400px] object-cover object-center transform hover:scale-105 transition-transform duration-700">
             
-            <!-- Lighting effect overlay -->
             <div class="absolute inset-0 bg-brandRed/5 mix-blend-overlay pointer-events-none"></div>
         </section>
 
-        <!-- OUR SERVICES SECTION -->
         <section class="flex flex-col items-center">
             <div class="flex items-center gap-4 w-full mb-6">
                 <div class="flex-1 h-px bg-slate-800"></div>
@@ -74,9 +63,7 @@
                 <div class="flex-1 h-px bg-slate-800"></div>
             </div>
 
-            <!-- Services Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full">
-                <!-- Service 1 -->
                 <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandRed/50 transition-colors">
                     <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
                         <i data-lucide="shield-check" class="w-5 h-5"></i>
@@ -84,7 +71,6 @@
                     <span class="text-xs font-bold uppercase tracking-wide text-slate-200">VITRIFICAÇÃO DE PINTURA</span>
                 </div>
 
-                <!-- Service 2 -->
                 <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandRed/50 transition-colors">
                     <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
                         <i data-lucide="sparkles" class="w-5 h-5"></i>
@@ -92,7 +78,6 @@
                     <span class="text-xs font-bold uppercase tracking-wide text-slate-200">CORREÇÃO E POLIMENTO</span>
                 </div>
 
-                <!-- Service 3 -->
                 <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandRed/50 transition-colors">
                     <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
                         <i data-lucide="car" class="w-5 h-5"></i>
@@ -100,7 +85,6 @@
                     <span class="text-xs font-bold uppercase tracking-wide text-slate-200">HIGIENIZAÇÃO INTERNA</span>
                 </div>
 
-                <!-- Service 4 -->
                 <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center hover:border-brandRed/50 transition-colors">
                     <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
                         <i data-lucide="droplet" class="w-5 h-5"></i>
@@ -110,7 +94,6 @@
             </div>
         </section>
 
-        <!-- WHY CHOOSE US -->
         <section class="flex flex-col items-center">
             <div class="flex items-center gap-4 w-full mb-6">
                 <div class="flex-1 h-px bg-slate-800"></div>
@@ -118,9 +101,7 @@
                 <div class="flex-1 h-px bg-slate-800"></div>
             </div>
 
-            <!-- Why Choose Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full">
-                <!-- Item 1 -->
                 <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center">
                     <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
                         <i data-lucide="gem" class="w-5 h-5"></i>
@@ -128,7 +109,6 @@
                     <span class="text-xs font-bold uppercase tracking-wide text-slate-200">PRODUTOS PREMIUM</span>
                 </div>
 
-                <!-- Item 2 -->
                 <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center">
                     <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
                         <i data-lucide="award" class="w-5 h-5"></i>
@@ -136,7 +116,6 @@
                     <span class="text-xs font-bold uppercase tracking-wide text-slate-200">ESPECIALIZADO</span>
                 </div>
 
-                <!-- Item 3 -->
                 <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center">
                     <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
                         <i data-lucide="clock" class="w-5 h-5"></i>
@@ -144,7 +123,6 @@
                     <span class="text-xs font-bold uppercase tracking-wide text-slate-200">ATENÇÃO AOS DETALHES</span>
                 </div>
 
-                <!-- Item 4 -->
                 <div class="bg-cardBg border border-slate-800/80 rounded-xl p-4 flex flex-col items-center text-center">
                     <div class="w-10 h-10 rounded-lg bg-brandRed/10 text-brandRed flex items-center justify-center mb-3">
                         <i data-lucide="check-circle-2" class="w-5 h-5"></i>
@@ -154,9 +132,7 @@
             </div>
         </section>
 
-        <!-- CONTACT / FOOTER INFO CARD -->
         <footer class="bg-cardBg border border-slate-800 rounded-2xl p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 shadow-xl">
-            <!-- Address -->
             <div class="flex items-start gap-3">
                 <div class="w-10 h-10 rounded-full bg-brandRed text-white flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandRed/30">
                     <i data-lucide="map-pin" class="w-5 h-5"></i>
@@ -167,7 +143,6 @@
                 </div>
             </div>
 
-            <!-- Contact -->
             <div class="flex items-start gap-3">
                 <div class="w-10 h-10 rounded-full bg-brandRed text-white flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandRed/30">
                     <i data-lucide="phone" class="w-5 h-5"></i>
@@ -178,7 +153,6 @@
                 </div>
             </div>
 
-            <!-- Instagram -->
             <div class="flex items-start gap-3">
                 <div class="w-10 h-10 rounded-full bg-brandRed text-white flex-shrink-0 flex items-center justify-center shadow-lg shadow-brandRed/30">
                     <i data-lucide="instagram" class="w-5 h-5"></i>
@@ -192,7 +166,6 @@
 
     </div>
 
-    <!-- Initialize Lucide Icons -->
     <script>
         lucide.createIcons();
     </script>
