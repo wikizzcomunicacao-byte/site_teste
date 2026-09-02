@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prospecção AI-First - Encontre Clientes Qualificados Automaticamente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#060913',
+                        cardBg: '#0f172a',
+                        neonCyan: '#00f0ff',
+                        neonBlue: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-neonCyan selection:text-darkBg overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-neonCyan to-neonBlue flex items-center justify-center shadow-lg shadow-neonCyan/20">
+                    <i data-lucide="zap" class="text-darkBg w-5 h-5 fill-current"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white">Lead<span class="text-neonCyan">Já</span></span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#como-funciona" class="hover:text-white transition-colors">Como funciona</a>
+                <a href="#recursos" class="hover:text-white transition-colors">Recursos</a>
+                <a href="#depoimentos" class="hover:text-white transition-colors">Depoimentos</a>
+                <a href="#planos" class="hover:text-white transition-colors">Planos</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#planos" class="relative group px-5 py-2.5 rounded-full bg-gradient-to-r from-neonCyan to-neonBlue text-darkBg font-bold text-sm transition-all duration-300 hover:shadow-lg hover:shadow-neonCyan/25 hover:scale-[1.02]">
+                    Começar agora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 flex flex-col items-center justify-center text-center px-6">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] md:w-[600px] h-[350px] md:h-[600px] bg-neonCyan/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-1/4 w-[250px] h-[250px] bg-neonBlue/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-slate-700/60 bg-slate-900/60 backdrop-blur-sm text-xs md:text-sm font-medium text-slate-300 mb-8 shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-neonCyan animate-ping"></span>
+            Prospecção AI-First • Novo em 2026
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight max-w-5xl leading-[1.1] mb-8">
+            Encontre <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-neonBlue">200 clientes</span> qualificados antes do almoço
+        </h1>
+
+        <p class="text-base sm:text-lg md:text-xl text-slate-400 max-w-2xl font-normal leading-relaxed mb-12">
+            A IA busca no Google, pontua e organiza seus leads automaticamente. <strong class="text-slate-200 font-semibold">Sem LinkedIn. Sem planilha. Sem perder horas.</strong>
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-6">
+            <a href="#planos" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-neonCyan to-neonBlue text-darkBg font-bold text-base transition-all duration-300 hover:shadow-xl hover:shadow-neonCyan/30 hover:scale-[1.02]">
+                <i data-lucide="sparkles" class="w-5 h-5 fill-current"></i>
+                Quero Gerar Meus Leads Agora
+            </a>
+            <a href="#como-funciona" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full border border-slate-700 bg-slate-900/40 hover:bg-slate-800/60 text-slate-300 hover:text-white font-medium text-base transition-all">
+                Ver como funciona
+            </a>
+        </div>
+
+        <span class="text-xs text-slate-500 font-medium">Ativação em minutos • Sem fidelidade • Cancele quando quiser</span>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-16 mt-24 pt-12 border-t border-slate-800/80 max-w-4xl w-full">
+            <div class="flex flex-col items-center">
+                <span class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 mb-1">1.200+</span>
+                <span class="text-xs md:text-sm text-slate-500 uppercase tracking-wider font-semibold">Empresas prospectando</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-neonBlue mb-1">48k</span>
+                <span class="text-xs md:text-sm text-slate-500 uppercase tracking-wider font-semibold">Leads gerados este mês</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 mb-1">3 min</span>
+                <span class="text-xs md:text-sm text-slate-500 uppercase tracking-wider font-semibold">Do zero ao 1º lead qualificado</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="py-24 bg-gradient-to-b from-darkBg to-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Como a inteligência trabalha por você</h2>
+                <p class="text-slate-400 text-lg">Esqueça o trabalho braçal. Nossa plataforma automatiza todo o funil de prospecção fria.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-neonCyan/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-neonCyan/10 text-neonCyan flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="search" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">1. Varredura Inteligente</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">O sistema cruza dados geolocalizados e do Google Maps para encontrar empresas reais, ativas e com fit exato para o seu nicho.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-neonCyan/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-neonBlue/10 text-neonBlue flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">2. Qualificação por IA</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Nossa IA analisa avaliações, presença digital e maturidade do lead, pontuando quem tem maior probabilidade de comprar.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-neonCyan/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">3. Contato Direto</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Receba a lista organizada em um painel limpo com telefones e canais de acesso rápido prontos para abordagem comercial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-900 text-center text-xs text-slate-600">
+        <p>&copy; 2026 LeadJá. Todos os direitos reservados. Design intencional e sem templates genéricos.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
